@@ -282,6 +282,14 @@ Navbar Area CSS
   width: 100%;
 }
 
+.nav-list ul li .active {
+  color: var(--primaryColor);
+}
+
+.nav-list ul li .active::before {
+  width: 100%;
+}
+
 .nav-list .nav-button-area {
   margin-left: 30px;
   display: -webkit-box;
@@ -519,6 +527,66 @@ Subscriber Area CSS
 
 .subscribe .subscriber-content .input-group .default-button {
   border: 0px !important;
+}
+
+/*================================================
+Inner Page Banner Area CSS
+=================================================*/
+.inner-page-banner-area {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0069D9), color-stop(#00899E), to(#0069D9));
+  background-image: linear-gradient(to right, #0069D9, #00899E, #0069D9);
+  padding: 80px 0px 75px;
+}
+
+.inner-page-banner-area h1 {
+  color: var(--whiteColor);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/*================================================
+FAQ Area CSS
+=================================================*/
+.faq-accordion-area .faq-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.faq-content .accordion-item {
+  border: 0px;
+}
+
+.faq-content .accordion-item .accordion-body {
+  -webkit-box-shadow: 0px -2px 10px -5px #666666;
+          box-shadow: 0px -2px 10px -5px #666666;
+  padding: 10px 15px;
+}
+
+.faq-content .accordion-item .accordion-body p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--fontFamily);
+}
+
+.faq-content .accordion-item .accordion-body p a {
+  color: var(--primaryColor);
+}
+
+.faq-content .accordion-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 0px !important;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: rgba(0, 0, 0, 0.04);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--fontFamily);
+}
+
+.faq-content .accordion-button:not(.collapsed) {
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
 }
 
 /*================================================
