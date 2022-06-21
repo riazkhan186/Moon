@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --fontFamily: 'PT Serif', serif;
+  --primaryColor: #0069D9;
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+  --paragraphColor: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fontFamily);
+}
+
+a {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--blackColor);
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+a:hover {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--paragraphColor);
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: var(--fontFamily);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-30 {
+  padding-top: 0px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.section-content {
+  margin-top: 30px;
+}
+
+.bg-eeeeee {
+  background-color: #eeeeee52;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--whiteColor) !important;
+  z-index: 99999;
+  padding: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+/*================================================
+Default Button CSS
+=================================================*/
+.default-button {
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 13px 30px 15px;
+  display: inline-block;
+  background-color: var(--primaryColor);
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+.default-button::before {
+  content: '';
+  z-index: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: #00899E;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.default-button::after {
+  content: '';
+  z-index: 0;
+  width: 100%;
+  height: 0%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: #00899E;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.default-button span {
+  z-index: 1;
+  position: relative;
+  color: var(--whiteColor);
+}
+
+.default-button:hover::before {
+  width: 100%;
+}
+
+.default-button:hover::after {
+  height: 100%;
+}
+
+/*================================================
+Section Title Area CSS
+=================================================*/
+.default-section-title h3 {
+  color: var(--blackColor);
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.default-section-title p sup {
+  position: relative;
+  top: -6px;
+  left: -3px;
+  font-size: 10px;
+}
+
+.default-section-title-middle {
+  text-align: center;
+}
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+.header {
+  padding: 20px 0px;
+}
+
+.header-logo-area a {
+  position: relative;
+  padding-bottom: 17px;
+  display: inline-block;
+}
+
+.header-logo-area a span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 10px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.nav-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav-list ul li .nav-item {
+  color: var(--paragraphColor);
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+.nav-list ul li .nav-item::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--primaryColor);
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.nav-list ul li .nav-item:hover {
+  color: var(--primaryColor);
+}
+
+.nav-list ul li .nav-item:hover::before {
+  width: 100%;
+}
+
+.nav-list .nav-button-area {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nav-list .nav-button-area::before {
+  content: '|';
+  color: var(--paragraphColor);
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*================================================
+Banner Area CSS
+=================================================*/
+.banner {
+  overflow: hidden;
+}
+
+.banner .banner-image-area {
+  height: 100%;
+  background-image: url("../image/banner/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .banner-image-area img {
+  display: none;
+}
+
+.banner .banner-text-area {
+  max-width: 450px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 30px;
+}
+
+.banner .banner-text-area h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.banner .banner-text-area h1 sup {
+  color: var(--paragraphColor);
+  position: relative;
+  top: -20px;
+  left: -10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.banner .banner-text-area .default-button {
+  margin-top: 10px;
+}
+
+.features-card {
+  background-color: var(--whiteColor);
+  padding: 30px 25px 30px 150px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.features-card img {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.features-card h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+.features-card p span {
+  text-decoration: underline;
+}
+
+.features-card:hover {
+  -webkit-box-shadow: 0px 0px 16px -10px var(--primaryColor);
+          box-shadow: 0px 0px 16px -10px var(--primaryColor);
+}
+
+.features-card:hover img {
+  -webkit-transform: translateY(-50%) rotateY(180deg);
+          transform: translateY(-50%) rotateY(180deg);
+}
+
+.card-img-area {
+  text-align: center;
+}
+
+.card-intro-text-area {
+  max-width: 450px;
+}
+
+.crypto-logo-img-card {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.crypto-logo-img-card span {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--fontFamily);
+}
+
+.crypto-logo-img-card span a {
+  color: var(--primaryColor);
+}
+
+.crypto-img-area {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
