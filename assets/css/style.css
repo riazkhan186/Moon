@@ -350,6 +350,9 @@ Banner Area CSS
   margin-top: 10px;
 }
 
+/*================================================
+Features Area CSS
+=================================================*/
 .features-card {
   background-color: var(--whiteColor);
   padding: 30px 25px 30px 150px;
@@ -391,6 +394,9 @@ Banner Area CSS
           transform: translateY(-50%) rotateY(180deg);
 }
 
+/*================================================
+Card Intro Area CSS
+=================================================*/
 .card-img-area {
   text-align: center;
 }
@@ -399,6 +405,9 @@ Banner Area CSS
   max-width: 450px;
 }
 
+/*================================================
+Crypto Area CSS
+=================================================*/
 .crypto-logo-img-card {
   position: relative;
   text-align: center;
@@ -425,6 +434,9 @@ Banner Area CSS
   text-align: center;
 }
 
+/*================================================
+Newsletter Area CSS
+=================================================*/
 .newsletter {
   background-color: #00899eaf;
 }
@@ -442,6 +454,9 @@ Banner Area CSS
   float: right;
 }
 
+/*================================================
+Subscriber Area CSS
+=================================================*/
 .subscribe {
   position: relative;
   background-size: cover;
@@ -507,6 +522,84 @@ Banner Area CSS
 }
 
 /*================================================
+Footer Area CSS
+=================================================*/
+.footer-social-icons {
+  text-align: center;
+}
+
+.footer-social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-icons ul li {
+  display: inline-block;
+}
+
+.footer-social-icons ul li a {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer-links-area ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 15px 0px 0px;
+}
+
+.footer-links-area ul li {
+  display: inline-block;
+}
+
+.footer-links-area ul li a {
+  display: inline-block;
+  position: relative;
+  color: var(--primaryColor);
+  margin-left: 16px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.footer-links-area ul li a::before {
+  content: '|';
+  font-size: 15px;
+  color: var(--paragraphColor);
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer-links-area ul li:first-child a::before {
+  display: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.copyright p:first-child {
+  margin-bottom: 15px;
+}
+
+.copyright p a {
+  color: var(--primaryColor);
+}
+
+/*================================================
 Go Top CSS
 =================================================*/
 .go-top {
@@ -553,8 +646,8 @@ Go Top CSS
 
 .go-top.active {
   opacity: 1;
-  visibility: visible;
   bottom: 25px;
+  visibility: visible;
   -webkit-animation: top-bottom 5s infinite linear;
           animation: top-bottom 5s infinite linear;
 }

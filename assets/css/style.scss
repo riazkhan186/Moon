@@ -329,6 +329,9 @@ Banner Area CSS
     }
 }
 
+/*================================================
+Features Area CSS
+=================================================*/
 .features-card {
     background-color: var(--whiteColor);
     padding: 30px 25px 30px 150px;
@@ -364,6 +367,9 @@ Banner Area CSS
     }
 }
 
+/*================================================
+Card Intro Area CSS
+=================================================*/
 .card-img-area {
     text-align: center;
 }
@@ -371,6 +377,9 @@ Banner Area CSS
     max-width: 450px;
 }
 
+/*================================================
+Crypto Area CSS
+=================================================*/
 .crypto-logo-img-card {
     position: relative;
     text-align: center;
@@ -395,6 +404,9 @@ Banner Area CSS
     text-align: center;
 }
 
+/*================================================
+Newsletter Area CSS
+=================================================*/
 .newsletter {
     background-color: #00899eaf;
     .newsletter-text {
@@ -412,6 +424,9 @@ Banner Area CSS
     }
 }
 
+/*================================================
+Subscriber Area CSS
+=================================================*/
 .subscribe {
     position: relative;
     background: {
@@ -465,6 +480,82 @@ Banner Area CSS
     }
 }
 
+/*================================================
+Footer Area CSS
+=================================================*/
+.footer-social-icons {
+    text-align: center;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                font-size: 20px;
+                margin: {
+                    left: 15px;
+                    right: 15px;
+                };
+            }
+        }
+    }
+}
+.footer-links-area {
+    ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 15px 0px 0px;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                position: relative;
+                color: var(--primaryColor);
+                margin: {
+                    left: 16px;
+                    right: 15px;
+                    top: 5px;
+                };
+                &::before {
+                    content: '|';
+                    font-size: 15px;
+                    color: var(--paragraphColor);
+                    position: absolute;
+                    left: -18px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &:first-child {
+                a {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    p {
+        margin-bottom: 0;
+        font: {
+            size: 12px;
+        };
+        &:first-child {
+            margin-bottom: 15px;
+        }
+        a {
+            color: var(--primaryColor);
+        }
+    }
+}
 
 
 
@@ -536,8 +627,8 @@ Go Top CSS
     }
 }
 .go-top.active {
-        opacity: 1;
-        visibility: visible;
-        bottom: 25px;
-        animation: top-bottom 5s infinite linear;
+    opacity: 1;
+    bottom: 25px;
+    visibility: visible;
+    animation: top-bottom 5s infinite linear;
 }
