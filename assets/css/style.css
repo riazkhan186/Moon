@@ -743,6 +743,76 @@ Authentication Page Area CSS
   background-color: var(--primaryColor) !important;
 }
 
+.authenticate-form p {
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  color: var(--blackColor);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.authenticate-form p::before {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00000000), color-stop(#000000), to(#000000));
+  background-image: linear-gradient(to right, #00000000, #000000, #000000);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.authenticate-form p::after {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#00000000), color-stop(#000000), to(#000000));
+  background-image: linear-gradient(to left, #00000000, #000000, #000000);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.authenticate-form .form-control {
+  margin-top: 15px;
+  padding: 12px 15px;
+  color: var(--blackColor);
+  border: 1px solid #00000013;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--fontFamily);
+}
+
+.authenticate-form a {
+  color: var(--primaryColor);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: var(--fontFamily);
+}
+
+.authenticate-form .forgot-pass {
+  display: block;
+}
+
+.authenticate-form .default-button {
+  border: 0px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.authenticate-form h6 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 /*================================================
 Go Top CSS
 =================================================*/

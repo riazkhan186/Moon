@@ -628,7 +628,6 @@ Footer Area CSS
 /*================================================
 Authentication Page Area CSS
 =================================================*/
-
 .google-link-button {
     margin-top: 10px;
     display: block;
@@ -687,6 +686,76 @@ Authentication Page Area CSS
                 background-color: var(--primaryColor) !important;
             }
         }
+    }
+}
+.authenticate-form {
+    p {
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+        color: var(--blackColor);
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        };
+        &::before {
+            content: '';
+            width: 40%;
+            height: 1px;
+            background-image: linear-gradient(to right, #00000000,#000000, #000000);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after {
+            content: '';
+            width: 40%;
+            height: 1px;
+            background-image: linear-gradient(to left, #00000000,#000000, #000000);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .form-control {
+        margin-top: 15px;
+        padding: 12px 15px;
+        color: var(--blackColor);
+        border: 1px solid #00000013;
+        font: {
+            size: 14px;
+            weight: 400;
+            family: var(--fontFamily);
+        };
+    }
+    a {
+        color: var(--primaryColor);
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        };
+        font: {
+            size: 13px;
+            weight: 400;
+            family: var(--fontFamily)
+        };
+    }
+    .forgot-pass {
+        display: block;
+    }
+    .default-button {
+        border: 0px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    h6 {
+        margin-top: 10px;
+        font: {
+            size: 14px;
+            weight: 400;
+        };
     }
 }
 
