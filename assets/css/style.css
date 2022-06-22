@@ -814,6 +814,89 @@ Authentication Page Area CSS
 }
 
 /*================================================
+Activity Page Area CSS
+=================================================*/
+#create-new-card {
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 8px 15px 8px 50px;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--whiteColor);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+#create-new-card i {
+  width: 40px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.activity-card {
+  margin-top: 30px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.09);
+}
+
+.activity-card h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.activity-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activity-card ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--fontFamily);
+}
+
+.activity-card ul li::before {
+  content: '>';
+  color: var(--primaryColor);
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.add-new-card button {
+  border: 0px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/*================================================
 Go Top CSS
 =================================================*/
 .go-top {
