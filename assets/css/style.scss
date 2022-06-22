@@ -842,29 +842,40 @@ Pop Up Area CSS
 =================================================*/
 .popup {
     position: fixed;
-    top: 0%;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000e6;
-    z-index: 99999;
+    z-index: -99999;
+    background-color: #000000f1;
+    visibility: hidden;
     .popup-content {
         width: 100%;
-        padding: 30px;
-        margin: 100px auto auto;
+        padding: 30px 30px 40px;
+        margin: 0px auto auto;
         max-width: 800px;
         position: relative;
         border-radius: 10px;
+        transition: 0s ease-in-out;
         background-color: var(--whiteColor);
         #close {
             cursor: pointer;
             position: absolute;
             right: 20px;
             top: 15px;
+            font: {
+                size: 22px;
+                weight: 700;
+            };
         }
     }
+    .default-button {
+        border: 0;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
 }
-
 .card-img {
     position: relative;
     h2 {
@@ -875,6 +886,14 @@ Pop Up Area CSS
             size: 20px;
             weight: 700;
         };
+    }
+    p {
+        text-align: center;
+        font: {
+            size: 12px;
+            style: italic;
+        };
+
     }
 }
 .input-groups {
@@ -944,22 +963,34 @@ Pop Up Area CSS
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.open-popup {
+    visibility: visible;
+    z-index: 99999;
+    .popup-content {
+        margin-top: 100px;
+        transition: .5s ease-in-out;
+    }
+}
+.add-card-checkout {
+    display: none;
+    .back-button {
+        border: 0;
+        background-color: transparent;
+        font: {
+            size: 16px;
+            weight: 700;
+            family: var(--fontFamily);
+        };
+    }
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font: {
+            size: 24px;
+            weight: 700;
+        };
+    }
+}
 
 /*================================================
 Go Top CSS

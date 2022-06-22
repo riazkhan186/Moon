@@ -137,42 +137,63 @@
             <div class="container">
                 <div class="popup-content">
                     <div id="close"><i class="fa-solid fa-xmark"></i></div>
-                    <h3>Create New Card</h3>
+                    <h3>Create A New Card</h3>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 align-items-center">
                             <div class="card-img">
                                 <img src="assets/image/card.jpg" alt="image">
-                                <h2>$ <span id="amout">10</span></h2>
+                                <h2>$<span id="amout">10</span></h2>
+                                <p>Note: this card will be valid for 60 days.</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="input-groups">
-                                <h4>Card Amount</h4>
-                                <div class="d-flex">
-                                    <input type="text" placeholder="Enter Amount" id="entered_amount">
-                                    <p>USD <img src="assets/image/United_States.png" alt="imag"></p>
-                                </div>
-                            </div>
-                            <div class="input-groups">
-                                <h4>Payment Method</h4>
-                                <div class="d-flex">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Bitcoin</option>
-                                        <option value="1">Ethirioum</option>
-                                        <option value="2">Coinbase</option>
-                                        <option value="3">Lighting</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="coin-conversion">
-                                <p>Conversion Rate: <span>1</span>BTC = $ <span>25658</span></p>
-                                <p>Last Update Few Seconds Ago</p>
-                            </div>
-                            <div class="input-groups last-group">
-                                <h4>You Pay</h4>
-                                <div class="d-flex">
-                                    <h6 id="Paying-amount">16</h6>
-                                    <p>BTC <img src="assets/image/bitcoin-logo.png" alt="imag"></p>
+                            <div class="create-card-text-area">
+                                <form id="add-card-input-form">
+                                    <div class="input-groups">
+                                        <h4>Card Amount</h4>
+                                        <div class="d-flex">
+                                            <input type="text" placeholder="Enter Amount" id="entered_amount">
+                                            <p>USD <img src="assets/image/United_States.png" alt="imag"></p>
+                                        </div>
+                                    </div>
+                                    <div class="input-groups">
+                                        <h4>Payment Method</h4>
+                                        <div class="d-flex">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Bitcoin</option>
+                                                <option value="1">Etherioum</option>
+                                                <option value="2">Coinbase</option>
+                                                <option value="3">Lighting</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="coin-conversion">
+                                        <p>Conversion Rate: <span>1</span> BTC = $ <span>25658</span></p>
+                                        <p>Last Update Few Seconds Ago</p>
+                                    </div>
+                                    <div class="input-groups last-group">
+                                        <h4>You Pay</h4>
+                                        <div class="d-flex">
+                                            <h6 id="Paying-amount">16</h6>
+                                            <p>BTC <img src="assets/image/bitcoin-logo.png" alt="imag"></p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="default-button" id="continue-button"><span>Continue</span></button>
+                                </form>
+                                <div class="add-card-checkout">
+                                    <button class="back-button"><i class="fa-solid fa-angle-left"></i> Back</button>
+                                    <h3>Is this the current amount?</h3>
+                                    <ul>
+                                        <li>This card will expire in 660 days.</li>
+                                        <li>This card works only in U.S merchants.</li>
+                                    </ul>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I understand these conditions.
+                                        </label>
+                                    </div>
+                                    <button class="default-button" id="create-card"><span>Yes Create Card</span></button>
                                 </div>
                             </div>
                         </div>

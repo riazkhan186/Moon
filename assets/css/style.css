@@ -901,21 +901,24 @@ Pop Up Area CSS
 =================================================*/
 .popup {
   position: fixed;
-  top: 0%;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000e6;
-  z-index: 99999;
+  z-index: -99999;
+  background-color: #000000f1;
+  visibility: hidden;
 }
 
 .popup .popup-content {
   width: 100%;
-  padding: 30px;
-  margin: 100px auto auto;
+  padding: 30px 30px 40px;
+  margin: 0px auto auto;
   max-width: 800px;
   position: relative;
   border-radius: 10px;
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
   background-color: var(--whiteColor);
 }
 
@@ -924,6 +927,15 @@ Pop Up Area CSS
   position: absolute;
   right: 20px;
   top: 15px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.popup .default-button {
+  border: 0;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
 }
 
 .card-img {
@@ -936,6 +948,12 @@ Pop Up Area CSS
   top: 85px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.card-img p {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .input-groups {
@@ -1007,6 +1025,36 @@ Pop Up Area CSS
 
 .coin-conversion p span {
   color: var(--blackColor);
+}
+
+.open-popup {
+  visibility: visible;
+  z-index: 99999;
+}
+
+.open-popup .popup-content {
+  margin-top: 100px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.add-card-checkout {
+  display: none;
+}
+
+.add-card-checkout .back-button {
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.add-card-checkout h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /*================================================

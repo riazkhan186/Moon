@@ -1,8 +1,5 @@
 (function ($) {
     "use strict";
-    // $(window).on("load", function (event) {
-    //     $(".back").delay(500).fadeOut(500);
-    // });
 
     // for sticky navbar
     $(window).scroll(function () {
@@ -13,6 +10,7 @@
         }
     });
 
+    // Brands Logo Slider
     $(".brand-logo-area").owlCarousel({
         dots: false,
         loop: true,
@@ -34,6 +32,7 @@
         }
     });
 
+    // Partner Slider 
     $(".partner-logo-area").owlCarousel({
         dots: false,
         loop: true,
@@ -55,24 +54,28 @@
         }
     });
 
+    // Tilt Js Plugin
     $('.js-tilt').tilt({
         scale: 100,
         glare: true,
         maxGlare: .1,
         transition: true,
     })
-    
-    // Go to Top
-    $(function () {
-        // Scroll Event
-        $(window).on("scroll", function () {
-            var scrolled = $(window).scrollTop();
-            if (scrolled > 300) $(".go-top").addClass("active");
-            if (scrolled < 300) $(".go-top").removeClass("active");
-        });
-        // Click Event
-        $(".go-top").on("click", function () {
-            $("html, body").animate({ scrollTop: "0" }, 500);
-        });
+
+    // For Create New Card PopUp
+    $('#create-new-card').click(function(){
+        $('.popup').addClass('open-popup');
     });
+    $('#close').click(function(){
+        $('.popup').removeClass('open-popup');
+    });
+    $('#continue-button').click(function(){
+        $('#add-card-input-form').css('display', 'none');
+        $('.add-card-checkout').css('display', 'block');
+    });
+    $('.back-button').click(function(){
+        $('#add-card-input-form').css('display', 'block');
+        $('.add-card-checkout').css('display', 'none');
+    });
+
 })(jQuery);
