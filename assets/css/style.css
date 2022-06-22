@@ -897,6 +897,119 @@ Activity Page Area CSS
 }
 
 /*================================================
+Pop Up Area CSS
+=================================================*/
+.popup {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e6;
+  z-index: 99999;
+}
+
+.popup .popup-content {
+  width: 100%;
+  padding: 30px;
+  margin: 100px auto auto;
+  max-width: 800px;
+  position: relative;
+  border-radius: 10px;
+  background-color: var(--whiteColor);
+}
+
+.popup .popup-content #close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img h2 {
+  position: absolute;
+  left: 48px;
+  top: 85px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.input-groups {
+  padding: 10px 15px 6px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #eeeeee;
+  background-color: var(--whiteColor);
+}
+
+.input-groups h4 {
+  line-height: 1;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input-groups input {
+  width: 120px;
+  border: 0px;
+  text-align: right;
+  border-bottom: 1px solid #464646;
+  font-size: 15px;
+  font-family: var(--fontFamily);
+}
+
+.input-groups p {
+  line-height: 1;
+  width: 85px;
+  padding-left: 10px;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input-groups p img {
+  width: 40px;
+  height: 25px;
+}
+
+.input-groups .form-select {
+  max-width: 200px;
+  border: 0px;
+}
+
+.last-group {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.coin-conversion p {
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: end;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  font-style: italic;
+}
+
+.coin-conversion p span {
+  color: var(--blackColor);
+}
+
+/*================================================
 Go Top CSS
 =================================================*/
 .go-top {
